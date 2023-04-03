@@ -13,6 +13,8 @@
 
 .tituloPrincipal{
     @include tituloPrincipal;
+    text-transform: uppercase;
+
 }
 
 .tituloSecundario{

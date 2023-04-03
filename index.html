@@ -1,22 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="dist/css/main.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="dist/css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <section>
-        <h1 class="tituloPrincipal">Teste</h1>
+      <h1 class="tituloPrincipal">Teste</h1>
     </section>
 
     <section class="hero">
-        <div class="hero__container">
-            <img class="hero__container__logo-principal__img" src="./dist/images/desktop/elenco-desk.jpg" alt="">
-            <img class="hero__container__logo__img" src="./dist/images/desktop/logo-trans.png" alt="">
-        </div>
+      <div class="hero__container">
+        <img
+          class="hero__container__logo-principal__img"
+          src="./dist/images/desktop/elenco-desk.jpg"
+          alt=""
+        />
+        <img
+          class="hero__container__logo__img"
+          src="./dist/images/desktop/logo-trans.png"
+          alt=""
+        />
+      </div>
     </section>
-</body>
+
+    <section class="historia">
+      <h1 class="tituloPrincipal pd">História</h1>
+
+      <nav class="historia__tabs">
+        <button
+          data-tab-button="egito-antigo"
+          class="historia__tabs__button historia__tabs__button--is-active">
+          egito antigo
+        </button>
+        <button data-tab-button="teth-adan" class="historia__tabs__button">
+          teth-adan
+        </button>
+        <button data-tab-button="poderes" class="historia__tabs__button">
+          poderes
+        </button>
+        <button data-tab-button="habilidades" class="historia__tabs__button">
+          habilidades
+        </button>
+      </nav>
+      <div data-tab-id="egito-antigo" class="historia__container historia__container--is-active">
+        <div class="historia__img">
+          <img src="./dist/images/desktop/adao-egito.jpg" alt="Egito" />
+        </div>
+        <p>
+          No Egito Antigo, o mago Shazam se tornou um dos conselheiros do faraó
+          Ramsés II. Conforme ele foi envelhecendo, ele decidiu escolher um novo
+          campeão para herdar seus poderes. O escolhido foi o jovem príncipe
+          Teth-Adam, visto como uma pessoa justa e decente pelo mago. No
+          entanto, por conta de um acordo que Blaze, filha do mago, fez com o
+          deus egípcio Set, toda vez que Teth-Adam dissesse “Shazam!”, ele
+          ganharia, na verdade, os poderes de outros seis deuses egípcios, Shu,
+          Heru, Amon, Zehuti, Aton e Mehen.
+        </p>
+      </div>
+      <div data-tab-id="teth-adan" class="historia__container">
+        <div class="historia__img">
+          <img src="./dist/images/desktop/ado-trono.jpg" alt="Egito" />
+        </div>
+        <p>
+            Teth-Adam se tornou um herói por séculos até o dia em que foi corrompido por Blaze e matou o governante de Kahndaq, país que ficava na Península do Sinai, e se proclamou novo governante do local. Shazam soube do ocorrido e prendeu a alma do personagem em um escaravelho e o enterrou, junto de seu corpo, na tumba de Ramses II, onde deveria ficar pelo resto da eternidade.
+            A partir desse dia, ele recebeu o nome de Adão Negro. Por conta disso, Shazam passou milênios sem apontar um novo campeão.
+        </p>
+      </div>
+      <div data-tab-id="poderes" class="historia__container">
+        <div class="historia__img">
+          <img src="./dist/images/desktop/adao-poderes.webp" alt="poderes" />
+        </div>
+        <p>
+            A resistência de Shu: ela permite que o Adão Negro consiga sobreviver aos mais variados tipos de ataque. 
+            A velocidade de Heru (mais conhecido como Hórus): o vilão pode se mover a velocidades supersônicas, além de conseguir voar e ganhar reflexos sobre-humanos.
+            A força de Ámon: O Adão Negro possui uma força que o transformou em um dos seres mais poderosos da Terra. 
+            A sabedoria de Zehuti (mais conhecido como Toth): o personagem ganha acesso instantâneo a várias áreas do conhecimento.
+            </p>
+      </div>
+      <div data-tab-id="habilidades" class="historia__container">
+        <div class="historia__img">
+          <img src="./dist/images/desktop/adao-habilidades.webp" alt="habilidades" />
+        </div>
+        <p>
+            Adão Negro também possui um vasto conhecimento do Egito Antigo, sabe falar diversas línguas, é especialista em combate corpo a corpo e tem grandes habilidades de liderança.
+            O personagem possui apenas uma fraqueza: tem certa vulnerabilidade a eletricidade. Se receber uma descarga elétrica muito forte, pode voltar a ser Theo Adam.
+        </p>
+      </div>
+    </section>
+<script src="./src/scripts/main.js"></script>
+  </body>
 </html>
