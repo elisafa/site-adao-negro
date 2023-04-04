@@ -10,6 +10,7 @@
     justify-content: center;
     gap: 60px;
 
+
     &__button {
       color: variaveis.$corTextoPrincipal;
       font-size: 24px;
@@ -37,11 +38,12 @@
     background-color: #000;
     border-radius: 40px;
     margin: 30px auto;
-
+    
     &--is-active {
-        display: flex;
+      display: flex;
+      animation: show 2s backwards;
     }
-
+    
     img{
         border-radius: 40px;
         width: 800px;
@@ -55,19 +57,11 @@
   }
 }
 
-//     }
-// }
-
-// &__menu{
-//     display: flex;
-//     justify-content: center;
-//     gap: 12px;
-//     color: variaveis.$corTextoPrincipal;
-//     padding: 60px 0 60px 0;
-
-//     li{
-//         list-style: none;
-//         text-transform: uppercase;
-//     }
-
-// }
+@keyframes show{
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
