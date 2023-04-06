@@ -32,7 +32,7 @@
     justify-content: center;
     align-items: center;
     padding: 60px;
-    gap: 40px;
+    gap: 60px;
     width: 90%;
     height: 500px;
     background-color: #000;
@@ -46,12 +46,12 @@
     
     img{
         border-radius: 40px;
-        width: 800px;
+        width: 700px;
     }
 
     p{
         color: variaveis.$corTextoParagrafo;
-        font-size: 24px;
+        font-size: 1.2rem;
         letter-spacing: 1px;
     }
   }
