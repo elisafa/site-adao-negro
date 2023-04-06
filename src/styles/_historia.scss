@@ -35,8 +35,9 @@
     gap: 60px;
     width: 90%;
     height: 500px;
-    background-color: #000;
+    background-color: rgba(0,0,0,.6);
     border-radius: 40px;
+    border: none;
     margin: 30px auto;
     
     &--is-active {
