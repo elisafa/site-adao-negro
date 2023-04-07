@@ -3,6 +3,21 @@ document.addEventListener('DOMContentLoaded', function(){
     const panels = document.querySelectorAll('.personagens__container__painel')
     const perguntas = document.querySelectorAll('.sobre__perguntas__item__pergunta')
 
+
+    const sectionHistoria = document.querySelector('.historia')
+    const alturaHistoria = sectionHistoria.clientHeight
+
+    window.addEventListener('scroll', ()=>{
+        const posicaoAtual = window.scrollY
+
+        if ( posicaoAtual < alturaHistoria){
+            exiberElementosHeader()
+        }else{
+            ocultaElementosHeader()
+        }
+    })
+
+// ABAS
     buttons.forEach(button => {
         button.addEventListener('click', function(botao){
             const alvo = botao.target.dataset.tabButton
@@ -14,6 +29,7 @@ document.addEventListener('DOMContentLoaded', function(){
         })
     })
 
+// PAINEIS ROLAGENS
     panels.forEach(panel => {
         panel.addEventListener('click', () => {
             removeClasseActivePersonagens()
@@ -21,6 +37,7 @@ document.addEventListener('DOMContentLoaded', function(){
         })
     })
 
+    // PERGUNTAS
     perguntas.forEach(pergunta =>{
         pergunta.addEventListener('click', function(){
             pergunta.classList.toggle('sobre__perguntas__item__pergunta--pseudo')
@@ -29,6 +46,16 @@ document.addEventListener('DOMContentLoaded', function(){
         })
     })
 })
+
+function ocultaElementosHeader(){
+    const header = document.querySelector('.header')
+    header.classList.add('header--is-hidden')
+}
+
+function exiberElementosHeader(){
+    const header = document.querySelector('.header')
+    header.classList.remove('header--is-hidden')
+}
 
 function removeBotaoAtivo(){
     const buttons = document.querySelectorAll('[data-tab-button]')

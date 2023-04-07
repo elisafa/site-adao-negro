@@ -14,11 +14,21 @@
     <title>Document</title>
   </head>
   <body>
-    <section>
-      <h1 class="tituloPrincipal">Teste</h1>
-    </section>
+    <header class="header ">
+      <div class="header__container">
+        <h1>
+          <img class="header__logo" src="./src/images/desktop/dc-logo.png" alt="Logo" />
+        </h1>
+        <ul class="header__links">
+          <li class="header__links__item"><a href="#historia">historia</a></li>
+          <li class="header__links__item"><a href="#personagens">personagens</a></li>
+          <li class="header__links__item"><a href="#elenco">elenco</a></li>
+          <li class="header__links__item"><a href="#sobre">o filme</a></li>
+        </ul>
+      </div>
+    </header>
 
-    <section class="hero">
+    <section id="hero" class="hero">
       <div class="hero__container">
         <img
           class="hero__container__logo-principal__img"
@@ -33,7 +43,7 @@
       </div>
     </section>
 
-    <section class="historia">
+    <section id="historia" class="historia">
       <h1 class="tituloPrincipal pd">História</h1>
 
       <nav class="historia__tabs">
@@ -118,7 +128,7 @@
       </div>
     </section>
 
-    <section class="personagens">
+    <section id="personagens" class="personagens">
       <h1 class="tituloPrincipal">personagens</h1>
       <div class="personagens__container">
         <div
@@ -188,7 +198,7 @@
       </div>
     </section>
 
-    <section class="elenco">
+    <section id="elenco" class="elenco">
       <h1 class="tituloPrincipal">Elenco</h1>
       <div class="elenco__container">
         <img src="./src/images/elenco/elenco.webp" alt="" />
@@ -207,7 +217,7 @@
       </div>
     </section>
 
-    <section class="sobre">
+    <section id="sobre" class="sobre">
       <h1 class="tituloPrincipal">Sobre o filme</h1>
       <ul class="sobre__perguntas">
         <li class="sobre__perguntas__item">
@@ -265,10 +275,10 @@
         alt="Logo"
       />
       <div class="footer__termos">
-        <p>POLÍTICA DE PRIVACIDADE</p>
-        <p>TERMOS</p>
-        <p>ACESSIBILIDADE</p>
-        <p>PREFERENCIAS</p>
+        <p><a href="#">política de privacidade</a> </p>
+        <p><a href="#">termos</a></p>
+        <p><a href="#">acessibilidade</a></p>
+        <p><a href="#">preferencias</a></p>
       </div>
     </footer>
     <script src="./src/scripts/main.js"></script>
