@@ -2,7 +2,6 @@ document.addEventListener('DOMContentLoaded', function(){
     const buttons = document.querySelectorAll('[data-tab-button]')
     const panels = document.querySelectorAll('.personagens__container__painel')
     const perguntas = document.querySelectorAll('.sobre__perguntas__item__pergunta')
-    const resposta = document.querySelectorAll('.sobre__perguntas__item__resposta')
 
     buttons.forEach(button => {
         button.addEventListener('click', function(botao){
@@ -23,8 +22,10 @@ document.addEventListener('DOMContentLoaded', function(){
     })
 
     perguntas.forEach(pergunta =>{
-        pergunta.addEventListener('click', function(event){
-            console.log(pergunta.nextElementSibling.classList.add('abrir'))
+        pergunta.addEventListener('click', function(){
+            pergunta.classList.toggle('sobre__perguntas__item__pergunta--pseudo')
+            pergunta.nextElementSibling.classList.toggle('sobre__perguntas__item__resposta--abrir')
+
         })
     })
 })
